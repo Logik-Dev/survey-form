@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Sondage</title>
+</head>
+<body>
+    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+    <div id="bg-img"></div>
+    <div id="wrapper">
+        <h1 id="title">Sondage</h1>
+        <p id="description">Quel développeur êtes vous?</p>
+        <form action="#" id="survey-form">
+            <p class="label-input">
+                <label for="name" id="name-label">Pseudo:</label>
+                <input type="text" id="name" placeholder="Entrez votre pseudo" required>
+                <i class="fas fa-user icon"></i>
+            </p>
+            <p class="label-input">
+                <label for="email" id="email-label">Email:</label>
+                <input type="email" id="email" placeholder="Entrez votre adresse mail" required>
+                <i class="fas fa-envelope icon"></i>
+            </p>
+            <p class="label-input">
+                <label for="number" id="number-label">Age:</label>
+                <input type="number" id="number" min="7" max="120" placeholder="77" required>
+                <i class="fas fa-sort-numeric-down icon"></i>
+            </p>
+            <p class="label-input">
+                <label for="dropdown" id="dropdown-label">Quel est votre situation?</label>
+                <select name="dropdown" id="dropdown">
+                    <option disabled value>Choisir une option</option>
+                    <option value="student">Etudiant</option>
+                    <option value="employed">Employé</option>
+                    <option value="manager">Cadre</option>
+                    <option value="other">Autre</option>
+                </select>            
+            </p>
+            <p class="label-input">
+                <label for="daytime" id="daytime-label">Combien de temps pouvez vous consacrez au développement par jour?</label>
+                <div class="radios">
+                    <label for="spendtime" class="radio">
+                        <input type="radio" name="spendtime" value="1">Moins de une heure
+                    </label>
+                    <label for="spendtime" class="radio">
+                        <input type="radio" name="spendtime" value="2">Moins de deux heures
+                    </label>
+                    <label for="spendtime" class="radio">
+                        <input type="radio" name="spendtime" value="3">Plus de deux heures
+                    </label>
+                </div>
+            </p>
+            <p class="label-input">
+                <label for="lang" id="lang-label">Quels sont vos languages favoris?</label>
+                <div class="checkboxes">
+                    <label for="ruby" class="checkbox">
+                        <input type="checkbox" value="ruby">Ruby
+                    </label>
+                    <label for="javascript" class="checkbox">
+                        <input type="checkbox" value="javascript">Javascript
+                    </label>
+                    <label for="php" class="checkbox">
+                        <input type="checkbox" value="php">PHP
+                    </label>
+                    <label for="python" class="checkbox">
+                        <input type="checkbox" value="python">Python
+                    </label>
+                </div>
+            </p>
+            <p class="label-input comments">
+                <label for="comments" id="comments-label">Commentaires ou suggestions:</label>
+                <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+            </p>
+            <button id="submit">Envoyer</button>
+        </form>
+    </div>
+</body>
+</html>
